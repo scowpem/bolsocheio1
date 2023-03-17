@@ -3,7 +3,8 @@
     margin: 10px;
     padding: 10px;
     display: grid;
-    place-items: center ;
+    place-items: center;
+    overflow-x: hidden;
   }
 
   .container {
@@ -26,7 +27,7 @@
   iframe {
     margin: 10px;
     width: 340px;
-    height: 20vh;
+    height: 35vh;
   }
 
   .video-container {
