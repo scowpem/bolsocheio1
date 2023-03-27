@@ -1,0 +1,34 @@
+@media screen and (max-width: 640px) {
+    header{
+        width: 100%;
+    }
+    
+    .container {
+        width: 100% !important;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        height: 50px;
+        width: 250px;
+        font-size: 10px;
+    }
+
+    iframe {
+        margin: 10px;
+        width: 340px;
+        height: 35vh;
+    }
+
+    .video-container {
+        display: grid;
+        place-content: center;
+        place-items: center;
+    }
+}
