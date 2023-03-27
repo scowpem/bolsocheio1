@@ -23,25 +23,36 @@
     <script src="./js/main.js" type="module" defer></script>
 </head>
 
+<!-- Deixar com esse overflox-x:hidden para a tela nao se movimentar para os lados -->
+
 <body style="overflow-x: hidden;">
     <header id="header">
+        <!-- TEXTO QUE FICA NO HEADER DA SUA PAGINA -->
         <p class="text_header">VOCÊ E MAIS 12 PESSOAS FORAM SELECIONADAS PARA TER ACESSO</p>
     </header>
     <main>
-        <section for="" class="section_one" >
+        <section for="" class="section_one">
+            <!-- SEMPRE MANTER ESSAS ESTRUTURA EM SINGLE PAGE PARA MANTER SEMPRE AS DIVS ALINHADAS AO CENTRO -->
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
+                        <!-- ESTRUTURA QUE DIGO SAO ESSAS ACIMA -->
                         <div>
-                            <img class="img-fluid" style="visibility: hidden" src="./imgs/logo.png" width="270" height="3" />&nbsp;
+                            <!-- AQUI E ONDE VAI A LOGO DO SEU PRODUTO -->
+                            <img class="img-fluid" style="visibility: hidden" src="./imgs/logo.png" width="270"
+                                height="3" />&nbsp;
                         </div>
+                        <!-- AQUI E ONDE VOCE COLOCA ALGUNS TEXTOS IMPORTANTES SOBRE SEU PRODUTO SEMPRE DEIXAR ESSE DENTRO DA DIV INITAL_TEXTS-->
                         <div class="inital__texts">
-                            <h1 class="headline" style="color: red; text-decoration: 5px underline red">É ISSO MESMO QUE VOCÊ LEU!</h1>
+                            <h1 class="headline" style="color: red; text-decoration: 5px underline red">É ISSO MESMO QUE
+                                VOCÊ LEU!</h1>
                             <h2 class="subline">VOCÊ TERÁ ACESSO AO MELHOR ROBÔ DO MINES PARA LUCRAR TODOS OS DIAS!</h2>
                             <h2 class="price">POR APENAS R$1,00 </h2>
                         </div>
+                        <!-- ESSE EH SEU BOTAO, AQUI VAI O LINK QUE VOCE QUER -->
                         <a href="https://bit.ly/registrofical" style="text-decoration: none;">
-                            <button class="btn_cta">
+                            <button class="btn_cta"> 
+                                <!-- ADICIONAR O TEXTO QUE VOCE QUER DENTRO DO SEU BOTAO -->
                                 QUERO ACESSAR POR R$1,00
                             </button>
                         </a>
@@ -50,12 +61,19 @@
             </div>
         </section>
         <section for="" class="section_two">
+            <!-- MANTENDO A ESTRUTURA QUE DISSE SEMPRE QUE INICIAR UMA NOVA SECTION PARA SUAS DIVS SEMPRE ESTAREM ALINHADAS -->
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h1 class="title_header_section_two">VEJA OS <p style="color: red;">RESULTADOS</p> DOS NOSSOS ALUNOS</h1>
+                        <!-- FIM DA ESTRUTURA DE ALINHAMENTO -->
+                        <!-- AQUI EH ONDE ESTA LOCALIZADO O INICIO DA SUA SEGUNDA SECTION -->
+                                                    <!-- NESSE CASO TEMOS UMA TAG P ENTRE UM H1 PARA DAR UM ESTILO DE COR PARA ELE -->
+                        <h1 class="title_header_section_two">VEJA OS <p style="color: red;">RESULTADOS</p> DOS NOSSOS
+                            ALUNOS</h1>
+                            <!-- AQUI EH ONDE ESTA NOSSO SLIDER DE FORMA AUTOMATICA QUE ATUALIZA A CADA 2S, ISSO PODE SER ALTERADO NO ARQUIVO SWIPER.JS -->
                         <div class="swiper">
                             <div class="swiper-wrapper">
+                                <!-- ESTRUTURA QUE DEVE SEGUIR SEMPRE QUE QUISER ADICIONAR UMA NOVA IMAGEM A SEU SLIDER -->
                                 <div class="swiper-slide">
                                     <img class="img_slider" src="./imgs/depoimento1.jpeg" alt="depoimento1">
                                 </div>
@@ -72,6 +90,7 @@
             </div>
         </section>
     </main>
+    <!-- FIM DA SUA PAGINA -->
     <footer>TODOS OS DIREITOS RESERVADOS</footer>
 </body>
 
