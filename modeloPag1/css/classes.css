@@ -10,10 +10,6 @@
     color: white;
 }
 
-.img-fluid{
-    visibility: hidden;
-}
-
 .inital__texts {
     display: flex;
     justify-content: center;
