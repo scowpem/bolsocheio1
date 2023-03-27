@@ -8,13 +8,20 @@
 }
 
 .video-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section_one, .section_two{
+.section_one {
     background-image: url(../imgs/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px -40px 40px #000;
+}
+
+.section_two {
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 0px -40px 40px #000;
@@ -29,7 +36,8 @@
 
 .text_m1 {
     margin-top: 0;
-} 
+}
+
 .mid__text {
     color: #07F31E
 }
@@ -41,20 +49,20 @@
     animation: pulse 1s ease-in-out infinite;
     height: 50px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.99);
+    box-shadow: 0px 0px 10px 0px #07F31E;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 5px;
     width: 300px;
 }
 
-.footer_area{
+.footer_area {
     display: grid;
     place-content: center;
-    margin-top: 50px;    
+    margin-top: 50px;
 }
 
-.title_header_section_two{
+.title_header_section_two {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,50 +70,43 @@
     color: white;
 }
 
-.subtitle_header_section_two{
+.subtitle_header_section_two {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
 
-.section_three{
+.section_three {
     background-color: white;
 }
 
-.garantia_produto{
+.garantia_produto {
     width: 100px;
     height: 100px;
 }
 
-.text_garantia_produtos{
+.text_garantia_produtos {
     font-size: 16px;
     margin-top: 20px;
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width:640px) {
     .inital__texts {
         margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     .text_m1 {
-        margin-top: 0;
-    } 
-    .mid__text {
-        color: #07F31E
+        font-size: 32px;
     }
-    
-    
-    .title_header_section_two{
+
+    .title_header_section_two {
         display: grid;
         place-items: center;
         gap: 5px;
         color: white;
     }
-
-
-
 }

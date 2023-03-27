@@ -26,6 +26,10 @@ footer{
 }
 
 @media screen and (max-width:640px) {
+	body{
+		overflow-x: hidden;
+	}
+
 	header{
 		height: 80px;
 	}

@@ -17,6 +17,7 @@ p {
 }
 
 
+
 iframe {
 	border-radius: 8px;
 	width: 100vw;
@@ -36,4 +37,16 @@ footer{
 	section {
 		overflow-x: hidden;
 	}
+	
+    iframe {
+        margin: 10px;
+        width: 340px;
+        height: 35vh;
+    }
+
+    .video-container {
+        display: grid;
+        place-content: center;
+        place-items: center;
+    }
 }
