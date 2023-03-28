@@ -4,13 +4,9 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
+        // CASO QUEIRA AUMENTAR O DELAY ENTRE AS IMGS, ALTERAR AQUI
         delay: 2000,
         disableOnInteraction: false,
-    },
- 
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
     },
 });
 
