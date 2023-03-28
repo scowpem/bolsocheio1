@@ -6,7 +6,9 @@
     padding-right: 10px;
     width: 100%;
     height: 100%;
+    /* AQUI EH O TAMANHO DA SUA FONTE QUE ESTA NO HEADER */
     font-size: 2rem;
+    /* AQUI A COR QUE VOCE VAI COLOCAR NA SUA FONTE DENTRO DO HEADER */
     color: white;
 }
 
@@ -15,32 +17,40 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* AQUI EH O TAMANHO DA DIV QUE ARMAZENA O TEXTOS, DEIXEI ELA DESSE TAMANHO PARA DEIXAR PROPROCIONAL A TELA */
     height: 300px;
     gap: 30px;
 }
 
 .headline {
+    /* AQUI EH A COR DA FONTE DA SUA HEADLINE */
     color: red;
+    /* AQUI O TEXTO QUE VOCE SUBLINHA, MUDAR APENAS A COR OU OS PXS */
     text-decoration: 5px underline red;
 }
 
 .subline {
+    /* COR DO TEXTO */
     color: white;
 }
 
 .price {
+    /* COR DO PRECO */
     color: red;
 }
 
 .section_one {
+    /* IMAGEM DE FUNDO QUE ESTA NA SECTION 1 */
     background-image: url(../imgs/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 0px -40px 40px #000;
+    /* NAO ALTERAR NADA QUE ESTA ACIMA, APENAS A URL DO FUNDO */
     height: 600px;
 }
 
 .section_two {
+    /* AQUI ESTA A COR DO FUNDO DA SECTION 2 */
     background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,16 +59,23 @@
 }
 
 .btn_cta {
+    /* COR DO BOTAO DE CTA */
     background-color: #07F31E;
+    /* COR DO TEXTO DA CTA */
     color: white;
+    /* TAMANHO DO TEXTO DA CTA */
     font-size: 1.5rem;
     animation: pulse 1s ease-in-out infinite;
+    /* ALTURA DO SEU BOTAO */
     height: 50px;
+    /* TAMANHO DAS BORDAS DO SEU BOTAO */
     border-radius: 10px;
+    /* COR DA BORDA DO SEU BOTAO, NAO ALTERAR PXS, APENAS A COR */
     box-shadow: 0px 0px 10px 0px #07F31E;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 5px;
+    /* AQUI EH A LARGURA DO SEU BOTAO, CASO QUEIRA MAIOR OU MENOR */
     width: 300px;
 }
 
@@ -73,6 +90,7 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+    /* AQUI EH A COR DO TEXTO DA SECTION 2 */
     color: white;
     font-size: 32px;
 }
@@ -88,10 +106,12 @@
     .text_header {
         text-align: center;
         width: 100%;
+        /* TAMANHO DA FONT NO CELULAR */
         font-size: 1.5rem;
     }
 
     .headline{
+        /* COR, TAMANHO E DECORACAO DA HEADLINE NO CELULAR */
         color: red;
         text-decoration: 5px underline red;
         font-size: 2rem;
@@ -102,10 +122,12 @@
     }
      
     .price{
+        /* TAMANHO DO TEXTO DO PRECO */
         font-size: 2rem;
     }
 
     .btn_cta {
+        /* TAMANHO DA FONTE DENTRO DO BOTAO E LARGURA DO BOTAO */
         font-size: 1.3rem;
         width: 200px;
     }
@@ -114,6 +136,7 @@
         display: grid;
         place-items: center;
         gap: 5px;
+        /* COR DO HEADER DA SECTION 2 */
         color: white;
     }
 

@@ -1,8 +1,10 @@
 header {
 	display: grid;
 	place-items: center;
+	/* AQUI EH ONDE VAI A COR DO SEU HEADER */
 	background-color: red;
 	width: 100%;
+	/* AQUI EH O TAMANHO DA FAIXA QUE VOCE DEIXA NO HEADER */
 	height: 50px
 }
 
@@ -19,9 +21,12 @@ p {
 footer{
 	display: grid;
 	place-content: center;
+	/* AQUI EH A COR QUE VOCE COLOCA NO SEU FOOTER */
 	background-color: gray;
+	/* AQUI O TAMANHO QUE VOCE COLOCA DO SEU FOOTER */
 	height: 50px;
 	font-weight: bold;
+	/* AJUSTAR O TAMANHO DA LETRA DE ACORDO COM O TAMANHO DO SEU FOOTER */
 	font-size: 1.5rem;
 }
 
