@@ -24,12 +24,221 @@
 <!-- Deixar com esse overflox-x:hidden para a tela nao se movimentar para os lados -->
 
 <body style="overflow-x: hidden;">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        header {
+            display: grid;
+            place-items: center;
+            background-color: red;
+            width: 100%;
+            height: 50px
+        }
+
+        section {
+            overflow-x: hidden;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 0px;
+        }
+
+        .text_header {
+            display: grid;
+            place-items: center;
+            margin-top: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 100%;
+            height: 100%;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .inital__texts {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 300px;
+            gap: 30px;
+        }
+
+        .headline {
+            color: red;
+            text-decoration: 5px underline red;
+        }
+
+        .subline {
+            color: white;
+        }
+
+        .price {
+            color: red;
+        }
+
+        .section_one {
+            background-image: url(../imgs/fundo.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: inset 0px -40px 40px #000;
+
+            height: 600px;
+        }
+
+        .section_two {
+            background-color: #000;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: inset 0px -40px 40px #000;
+            height: 700px;
+        }
+
+        .btn_cta {
+            background-color: #07F31E;
+            color: white;
+            font-size: 1.5rem;
+            animation: pulse 1s ease-in-out infinite;
+            height: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #07F31E;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 5px;
+            width: 300px;
+        }
+
+        .footer_area {
+            display: grid;
+            place-content: center;
+            margin-top: 50px;
+        }
+
+        .title_header_section_two {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            color: white;
+            font-size: 32px;
+        }
+
+        .subtitle_header_section_two {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .swiper {
+            width: 100%;
+        }
+
+        .swiper_slide {
+            width: 100%;
+            margin: 10px;
+        }
+
+        .img_slider {
+            width: 250px;
+            height: 500px;
+        }
+
+        footer {
+            display: grid;
+            place-content: center;
+            background-color: gray;
+            height: 50px;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        @media screen and (max-width:640px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            header {
+                height: 80px;
+            }
+
+            section {
+                overflow-x: hidden;
+            }
+
+            .text_header {
+                text-align: center;
+                width: 100%;
+                font-size: 1.5rem;
+            }
+
+            .headline {
+                color: red;
+                text-decoration: 5px underline red;
+                font-size: 2rem;
+            }
+
+            .subline {
+                font-size: 1.5rem;
+            }
+
+            .price {
+                font-size: 2rem;
+            }
+
+            .btn_cta {
+                font-size: 1.3rem;
+                width: 200px;
+            }
+
+            .title_header_section_two {
+                display: grid;
+                place-items: center;
+                gap: 5px;
+                color: white;
+            }
+
+            .section_two {
+                background-color: #000;
+                background-repeat: no-repeat;
+                background-size: cover;
+                box-shadow: inset 0px -40px 40px #000;
+                overflow: hidden;
+
+            }
+        }
+    </style>
     <header id="header">
         <!-- TEXTO QUE FICA NO HEADER DA SUA PAGINA -->
         <p class="text_header">VOCÊ E MAIS 12 PESSOAS FORAM SELECIONADAS PARA TER ACESSO</p>
     </header>
     <main>
-        <section for="" class="section_one">
+        <section for="" class="section_one" style="background-image: url(./imgs/fundo.png);">
             <!-- SEMPRE MANTER ESSAS ESTRUTURA EM SINGLE PAGE PARA MANTER SEMPRE AS DIVS ALINHADAS AO CENTRO -->
             <div class="container">
                 <div class="row justify-content-center">
@@ -37,8 +246,7 @@
                         <!-- ESTRUTURA QUE DIGO SAO ESSAS ACIMA -->
                         <div>
                             <!-- AQUI E ONDE VAI A LOGO DO SEU PRODUTO -->
-                            <img class="img-fluid" src="./imgs/logovermelho.png" width="290"
-                                height="3" />&nbsp;
+                            <img class="img-fluid" src="./imgs/logovermelho.png" width="290" height="3" />&nbsp;
                         </div>
                         <!-- AQUI E ONDE VOCE COLOCA ALGUNS TEXTOS IMPORTANTES SOBRE SEU PRODUTO SEMPRE DEIXAR ESSE DENTRO DA DIV INITAL_TEXTS-->
                         <div class="inital__texts">
@@ -49,7 +257,7 @@
                         </div>
                         <!-- ESSE EH SEU BOTAO, AQUI VAI O LINK QUE VOCE QUER -->
                         <a href="https://bit.ly/registrofical" style="text-decoration: none;">
-                            <button class="btn_cta"> 
+                            <button class="btn_cta">
                                 <!-- ADICIONAR O TEXTO QUE VOCE QUER DENTRO DO SEU BOTAO -->
                                 QUERO ACESSAR POR R$1,00
                             </button>
@@ -65,10 +273,10 @@
                     <div class="col-lg-8 text-center">
                         <!-- FIM DA ESTRUTURA DE ALINHAMENTO -->
                         <!-- AQUI EH ONDE ESTA LOCALIZADO O INICIO DA SUA SEGUNDA SECTION -->
-                                                    <!-- NESSE CASO TEMOS UMA TAG P ENTRE UM H1 PARA DAR UM ESTILO DE COR PARA ELE -->
+                        <!-- NESSE CASO TEMOS UMA TAG P ENTRE UM H1 PARA DAR UM ESTILO DE COR PARA ELE -->
                         <h1 class="title_header_section_two">VEJA OS <p style="color: red;">RESULTADOS</p> DOS NOSSOS
                             ALUNOS</h1>
-                            <!-- AQUI EH ONDE ESTA NOSSO SLIDER DE FORMA AUTOMATICA QUE ATUALIZA A CADA 2S, ISSO PODE SER ALTERADO NO ARQUIVO SWIPER.JS -->
+                        <!-- AQUI EH ONDE ESTA NOSSO SLIDER DE FORMA AUTOMATICA QUE ATUALIZA A CADA 2S, ISSO PODE SER ALTERADO NO ARQUIVO SWIPER.JS -->
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <!-- ESTRUTURA QUE DEVE SEGUIR SEMPRE QUE QUISER ADICIONAR UMA NOVA IMAGEM A SEU SLIDER -->
