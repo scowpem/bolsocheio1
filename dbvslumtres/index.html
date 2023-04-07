@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="heading">
+        <p>NÃO FECHE A PÁGINA, ESSA É SUA ÚNICA CHANCE!</p>
+    </div>
+
+    <div class="hero">
+        <div class="call headline">
+            JOGUE AO VIVO COMIGO E LUCRE TODOS OS DIAS NA MAIOR SALA DE SINAIS DO BRASIL
+        </div>
+        <br>
+        <br>
+        <div class="video">
+            <div id="vid_642b4ba976fbd10009618421" style="position:relative;width:100%;padding: 56.25% 0 0;"><img
+                    id="thumb_642b4ba976fbd10009618421"
+                    src="https://images.converteai.net/ee640c77-fc31-4eef-9efd-3142f4299e17/players/642b4ba976fbd10009618421/thumbnail.jpg"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+                <div id="backdrop_642b4ba976fbd10009618421"
+                    style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);">
+                </div>
+            </div>
+            <script type="text/javascript"
+                id="scr_642b4ba976fbd10009618421">var s = document.createElement("script"); s.src = "https://scripts.converteai.net/ee640c77-fc31-4eef-9efd-3142f4299e17/players/642b4ba976fbd10009618421/player.js", s.async = !0, document.head.appendChild(s);</script>
+        </div>
+
+        <br><br>
+
+        <div class="center-align">
+            <a id="aparecer" href="" class="breathe-btn">QUERO ACESSAR POR R$3,99</a>
+        </div>
+
+    </div>
+    <div id="aparecer" class="depoimentos">
+        <p class="headline">OS RESULTADOS DOS NOSSOS ALUNOS SÃO IMPRESSIONANTES...</p>
+        <br><br>
+        <div class="carousel">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/depoimento1.jpeg" alt="" srcset="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/depoimento2.jpeg" alt="" srcset="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/depoimento3.jpeg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="aparecer" class="popup">
+
+        <p class="headline">EU E VOCÊ LUCRANDO TODOS OS DIAS</p>
+
+        <img src="img/popup.png" alt="">
+
+        <p>Na minha sala de sinais, você apostará com sinais ao vivo do Double, seu eu ganho, você também ganha!</p>
+        <br>
+        <p>Estamos há exatos:</p>
+        <p>14 dias sem nenhum sinal errado</p>
+    </div>
+
+    <div id="aparecer" class="sobre">
+
+        <p class="headline">Eu sou Richard Venturini</p>
+        <img src="img/foto.png" alt="">
+        <p>De vendedor de água no farol a rico com Double, decidi acabar com os vendedores de curso e entregar minhas
+            salas de sinais por um preço acessível!</p>
+
+    </div>
+
+    <div id="aparecer" class="risco">
+        <p class="headline">EU ASSUMO TODO SEU RISCO!</p>
+        <img src="img/7-DIAS-DE-GARANTIA.png" alt="">
+        <p>Você tem 7 dias para testar o Double Pro, e se não gostar, basta solicitar seu reembolso. Enviaremos seu
+            dinheiro de volta na mesma hora.</p>
+    </div>
+
+    <div class="copy center-align">
+        TODOS OS DIREITOS RESERVADOS
+    </div>
+
+    <link rel="preload"
+        href="https://scripts.converteai.net/ee640c77-fc31-4eef-9efd-3142f4299e17/players/642b4ba976fbd10009618421/player.js"
+        as="script">
+    <link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+    <link rel="preload"
+        href="https://images.converteai.net/ee640c77-fc31-4eef-9efd-3142f4299e17/players/642b4ba976fbd10009618421/thumbnail.jpg"
+        as="image">
+    <link rel="preload"
+        href="https://cdn.converteai.net/ee640c77-fc31-4eef-9efd-3142f4299e17/642b4b5a76fbd1000961841f/playlist.m3u8"
+        as="fetch">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            grabCursor: true,
+
+        });
+
+        function showElements(id, ms) {
+            const elements = document.querySelectorAll(`#${id}`);
+            const removeId = () => {
+                elements.forEach(element => {
+                    element.removeAttribute('id');
+                });
+            };
+            setTimeout(removeId, ms);
+        }
+
+        showElements('aparecer', 30000)
+    </script>
+
+</body>
+
+</html>
